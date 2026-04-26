@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daria Popova</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { font-size:16px; }
+body {
+  font-family:'Inter', system-ui, sans-serif;
+  font-weight:300;
+  background:#fff;
+  color:#111;
+  -webkit-font-smoothing:antialiased;
+  padding:80px 28px 120px;
+}
+a { color:inherit; text-decoration:none; border-bottom:1px solid #ddd; transition:border-color .15s; }
+a:hover { border-color:#111; }
+
+.page { max-width:560px; margin:0 auto; }
+
+h1 { font-size:1rem; font-weight:500; margin-bottom:4px; }
+.location { font-size:.88rem; color:#bbb; margin-bottom:64px; }
+
+section { margin-bottom:52px; }
+.label { font-size:.75rem; font-weight:500; letter-spacing:.08em; text-transform:uppercase; color:#bbb; margin-bottom:20px; }
+
+/* now */
+.now-title { font-size:1rem; font-weight:400; margin-bottom:6px; }
+.now-desc { font-size:.93rem; line-height:1.65; color:#555; }
+
+/* projects with photo */
+.proj-list { display:flex; flex-direction:column; gap:28px; }
+
+.proj-item { display:grid; grid-template-columns:72px 1fr; gap:16px; align-items:start; }
+
+.proj-photo {
+  width:72px; height:72px;
+  border-radius:6px;
+  overflow:hidden;
+  background:#f3f3f3;
+  flex-shrink:0;
+}
+.proj-photo img { width:100%; height:100%; object-fit:cover; display:block; }
+.proj-photo-placeholder {
+  width:100%; height:100%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:.65rem; color:#ccc; letter-spacing:.04em; text-align:center;
+  line-height:1.4; padding:4px;
+}
+
+.proj-text {}
+.proj-row { display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:4px; }
+.proj-name { font-size:.95rem; font-weight:400; }
+.proj-meta { font-size:.82rem; color:#aaa; white-space:nowrap; }
+.proj-sub { font-size:.85rem; color:#888; line-height:1.55; }
+
+/* about */
+.about-text { font-size:.95rem; line-height:1.75; color:#444; }
+.about-text p + p { margin-top:1em; }
+
+/* contact */
+.contact-link { font-size:.95rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>Daria Popova</h1>
+  <p class="location">Porto, Portugal</p>
+
+  <section>
+    <p class="label">Now</p>
+    <div class="proj-item">
+      <div class="proj-photo">
+        <!-- <img src="photos/luza.jpg" alt="Luza"> -->
+        <div class="proj-photo-placeholder">your photo</div>
+      </div>
+      <div class="proj-text">
+        <p class="now-title"><a href="https://luza.ai">Luza</a> — AI companion for elderly people living alone</p>
+        <p class="now-desc">My grandmother was alone after my grandfather died. I built something that calls her every day. She's happier. Now running a 100-family experiment across Europe.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">Projects</p>
+    <div class="proj-list">
+
+      <div class="proj-item">
+        <div class="proj-photo">
+          <!-- замени src на путь к фото: <img src="photos/dreamway.jpg" alt="Dreamway"> -->
+          <div class="proj-photo-placeholder">your photo</div>
+        </div>
+        <div class="proj-text">
+          <div class="proj-row">
+            <span class="proj-name">Dreamway</span>
+            <span class="proj-meta">2022</span>
+          </div>
+          <p class="proj-sub">Relocation compass built in 2 weeks — 100k users, zero budget.</p>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <div class="proj-photo">
+          <div class="proj-photo-placeholder">your photo</div>
+        </div>
+        <div class="proj-text">
+          <div class="proj-row">
+            <span class="proj-name">Eco-course</span>
+            <span class="proj-meta">2021</span>
+          </div>
+          <p class="proj-sub">Online course for ecology students — 200 students, $100k, solo.</p>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <div class="proj-photo">
+          <div class="proj-photo-placeholder">your photo</div>
+        </div>
+        <div class="proj-text">
+          <div class="proj-row">
+            <span class="proj-name">Green Gang</span>
+            <span class="proj-meta">2019</span>
+          </div>
+          <p class="proj-sub">First sustainability club in my city. Still running after my graduation.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <p class="label">About</p>
+    <div class="about-text">
+      <p>Originally from Russia. Living in Porto, Portugal.</p>
+      <p>I've been building products independently since 2019 — across education, tech, and elder care.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">Contact</p>
+    <a href="mailto:provideinsights@gmail.com" class="contact-link">provideinsights@gmail.com</a>
+  </section>
+
+</div>
+</body>
+</html>
